@@ -1,6 +1,12 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 
-const parseYaml = yaml.safeLoad(fs.readFileSync('./src/db/db.yml', 'utf8'));
+const parseBlog = yaml.safeLoad(fs.readFileSync('./src/db/blog.yml', 'utf8'));
+const parseYoutube = yaml.safeLoad(
+  fs.readFileSync('./src/db/youtube.yml', 'utf8')
+);
 
-module.exports = parseYaml;
+module.exports = {
+  parseBlog,
+  parseYoutube
+};
