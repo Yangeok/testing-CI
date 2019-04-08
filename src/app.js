@@ -22,7 +22,7 @@ app
   .use(router.allowedMethods());
 
 // Connection
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 80;
 const db = require('./db/models');
 app.listen(PORT, () => {
   console.log(`> Koa server is running on port ${PORT}`);
