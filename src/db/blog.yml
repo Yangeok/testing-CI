@@ -1,18 +1,15 @@
-- name: a
-  desc: aa
-  url: http://www.example.com/
-- name: b
-  desc: bb
-  url: http://www.example.com/
-- name: c
-  desc: cc
-  url: http://www.example.com/
-- name: d
-  desc: dd
-  url: http://www.example.com/
-- name: e
-  desc: ee
-  url: http://www.example.com/
-- name: f
-  desc: ff
-  url: http://www.example.com/
+- name: HB시골박사
+  desc: 맨몸운동, 핸드밸런싱, 기계체조, 홈트레이닝
+  url: https://blog.naver.com/spm0808
+- name: 체조쟁이
+  desc: 기계체조
+  url: https://blog.naver.com/kjmgym
+- name: 땅끄부부
+  desc: 홈트레이닝
+  url: http://blog.naver.com/prologue/PrologueList.nhn?blogId=goldtiger623
+- name: 수피
+  desc: 헬스
+  url: https://blog.naver.com/kiltie999
+- name: 멸병
+  desc: 맨몸운동, 기계체조
+  url: https://gymnastic.tistory.com/

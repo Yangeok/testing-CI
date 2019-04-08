@@ -3,9 +3,11 @@ const mongoose = require('mongoose');
 module.exports = () => {
   function connect() {
     mongoose.connect(
-      'mongodb://root:root@52.79.70.237:27017/admin',
+      'mongodb://52.79.70.237:27017/test',
       {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useCreateIndex: true,
+        useFindAndModify: true
       },
       err => {
         if (err) {
