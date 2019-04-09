@@ -10,7 +10,7 @@ exports.list = async ctx => {
 
 exports.create = async ctx => {
   try {
-    await Blog.remove();
+    await Blog.deleteMany();
     const data = await Blog.insertMany(parseBlog);
     ctx.body = {
       success: true,

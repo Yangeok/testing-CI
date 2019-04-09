@@ -1,18 +1,36 @@
-- name: g
-  desc: gg
-  url: http://www.example.com/
-- name: h
-  desc: hh
-  url: http://www.example.com/
-- name: i
-  desc: ii
-  url: http://www.example.com/
-- name: j
-  desc: jj
-  url: http://www.example.com/
-- name: k
-  desc: kk
-  url: http://www.example.com/
-- name: l
-  desc: ll
-  url: http://www.example.com/
+- name: 라이프니츠
+  desc: 영양, 피트니스
+  url: https://www.youtube.com/channel/UC1JDW7bhgaEnVxVpJE_aLbw
+- name: Calisthenicmovement
+  desc: 맨몸운동
+  url: https://www.youtube.com/channel/UCZIIRX8rkNjVpP-oLMHpeDw
+- name: 갯츠비
+  desc: 영양, 약물
+  url: https://www.youtube.com/channel/UCLfc87S_edQ59xTzJqqY13A
+- name: Dan Jeong
+  desc: 맨몸운동
+  url: https://www.youtube.com/user/bboySaza
+- name: DesLun workout데스런
+  desc: 맨몸운동
+  url: https://www.youtube.com/channel/UCHHGX6n-7T01PV9P2zquXvA
+- name: 피지컬갤러리
+  desc: 웨이트, 마사지
+  url: https://www.youtube.com/channel/UCdtRAcd3L_UpV4tMXCw63NQ
+- name: 파워게르만
+  desc: 파워리프팅
+  url: https://www.youtube.com/user/haegeonkang
+- name: 말왕TV
+  desc: 운동
+  url: https://www.youtube.com/user/MrRagoona88
+- name: Muscle Madness
+  desc: 브이로그
+  url: https://www.youtube.com/channel/UClFbb1ouXVZzjMB9Yha5nAQ
+- name: Bodyweight Mastery
+  desc: 맨몸운동, 기계체조
+  url: https://www.youtube.com/channel/UCMg-LKhuSEbW107mO0vgkLw
+- name: 박승현
+  desc: 웨이트, 약물
+  url: https://www.youtube.com/channel/UCb2PIM0UHn-qGwXRST-Kcsw
+- name: Noa Man WORKOUT
+  desc: 기계체조, 맨몸운동, 브이로그
+  url: https://www.youtube.com/channel/UCaYy4Zi9eM_Z2kjwpfMs04w
