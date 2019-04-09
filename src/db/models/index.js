@@ -13,7 +13,7 @@ module.exports = () => {
         if (err) {
           console.error(`connection error:`, err);
         }
-        console.log(`> DB connected on development environment`);
+        console.log(`> DB connected on ${process.env.NODE_ENV} environment`);
       }
     );
   }

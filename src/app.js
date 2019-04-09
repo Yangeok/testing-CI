@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const Router = require('koa-router');
-const cors = require('koa2-cors');
 const json = require('koa-json');
+const cors = require('koa2-cors');
 const logger = require('koa-logger');
 const bodyParser = require('koa-body');
 
@@ -22,7 +22,7 @@ app
   .use(router.allowedMethods());
 
 // Connection
-const PORT = process.env.PORT || 80;
+const { PORT } = require('./utils/env');
 const db = require('./db/models');
 app.listen(PORT, () => {
   console.log(`> Koa server is running on port ${PORT}`);
