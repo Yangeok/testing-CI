@@ -1,9 +1,11 @@
+require('dotenv').config({ path: __dirname });
 const mongoose = require('mongoose');
+const env = process.env;
 
 module.exports = () => {
   function connect() {
     mongoose.connect(
-      'mongodb://52.79.70.237:27017/test',
+      `${env.MONGO_URI}${env.MONGO_DATABASE}`,
       {
         useNewUrlParser: true,
         useCreateIndex: true,
@@ -13,7 +15,9 @@ module.exports = () => {
         if (err) {
           console.error(`connection error:`, err);
         }
-        console.log(`> DB connected on ${process.env.NODE_ENV} environment`);
+        console.log(
+          `> DB connected on uri ${env.MONGO_URI} ${env.NODE_ENV} environment`
+        );
       }
     );
   }
