@@ -1,9 +1,5 @@
 # Training Log API Server
 
-## Todo
-
-- mongodb에서 데이터 출력를 출력합니다.
-
 ## Endpoints
 
 `GET /blog`
