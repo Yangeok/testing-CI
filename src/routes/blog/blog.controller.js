@@ -9,8 +9,21 @@ exports.list = async ctx => {
 };
 
 exports.feeds = async ctx => {
-  const data = await BlogFeeds.find()
-    .select('-_id')
-    .sort({ pubDate: 'desc' });
-  ctx.body = data;
+  const pageSize = 25;
+  const page = ctx.request.query.page || 1;
+  const limit = ctx.request.query.limit || pageSize;
+
+  const options = {
+    page: page,
+    limit: limit,
+    sort: { pubDate: 'desc' }
+  };
+  try {
+    const aggregate = BlogFeeds.aggregate();
+    const data = await BlogFeeds.aggregatePaginate(aggregate, options);
+    ctx.body = { success: true, data: data };
+  } catch (e) {
+    ctx.status = 400;
+    ctx.body = { success: false, message: e.message };
+  }
 };
