@@ -9,7 +9,7 @@ exports.list = async ctx => {
 };
 
 exports.feeds = async ctx => {
-  const pageSize = 25;
+  const pageSize = 100;
   const page = ctx.request.query.page || 1;
   const limit = ctx.request.query.limit || pageSize;
 
