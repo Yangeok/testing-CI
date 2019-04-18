@@ -24,8 +24,8 @@ exports.getBlogFeeds = async ctx => {
     sort: { pubDate: 'desc' }
   };
 
-  const aggregate = YoutubeFeeds.aggregate();
-  const data = await YoutubeFeeds.aggregatePaginate(aggregate, options);
+  const aggregate = BlogFeeds.aggregate();
+  const data = await BlogFeeds.aggregatePaginate(aggregate, options);
   return data;
 };
 
