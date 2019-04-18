@@ -1,29 +1,22 @@
 const Blog = require('../../db/models/blog');
 const BlogFeeds = require('../../db/models/blogFeeds');
+const { getBlogAuthors, getBlogFeeds } = require('../../utils/query');
+const { successMessage, errorMessage } = require('../../utils/response');
 
 exports.list = async ctx => {
-  const data = await Blog.find()
-    .select('-_id name url desc')
-    .sort({ name: 'asc' });
-  ctx.body = data;
+  try {
+    ctx.body = successMessage('data', await getBlogAuthors());
+  } catch (e) {
+    ctx.status = 400;
+    ctx.body = errorMessage(e.message);
+  }
 };
 
 exports.feeds = async ctx => {
-  const pageSize = 100;
-  const page = ctx.request.query.page || 1;
-  const limit = ctx.request.query.limit || pageSize;
-
-  const options = {
-    page: page,
-    limit: limit,
-    sort: { pubDate: 'desc' }
-  };
   try {
-    const aggregate = BlogFeeds.aggregate();
-    const data = await BlogFeeds.aggregatePaginate(aggregate, options);
-    ctx.body = { success: true, data: data };
+    ctx.body = successMessage('data', await getBlogFeeds(ctx));
   } catch (e) {
     ctx.status = 400;
-    ctx.body = { success: false, message: e.message };
+    ctx.body = errorMessage(e.message);
   }
 };
