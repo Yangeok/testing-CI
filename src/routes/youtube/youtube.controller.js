@@ -1,5 +1,3 @@
-const Youtube = require('../../db/models/youtube');
-const YoutubeFeeds = require('../../db/models/youtubeFeeds');
 const { getYoutubeAuthors, getYoutubeFeeds } = require('../../utils/query');
 const { successMessage, errorMessage } = require('../../utils/response');
 

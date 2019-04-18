@@ -1,5 +1,3 @@
-const Blog = require('../../db/models/blog');
-const BlogFeeds = require('../../db/models/blogFeeds');
 const { getBlogAuthors, getBlogFeeds } = require('../../utils/query');
 const { successMessage, errorMessage } = require('../../utils/response');
 
