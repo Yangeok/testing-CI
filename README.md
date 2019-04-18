@@ -7,24 +7,19 @@
 
 ## Endpoints
 
-`GET /blog`
+`GET /blog/<pageNumber>/<pageLimit>`
 
 - mongodb에서 blog 목록 데이터를 읽어옵니다.
 
-`GET /blog/feed`
-
-- Query paratmers
-
-  - Filter by page, limit (default page=1, limit=25)
-    `?page=1&limit=25`
+`GET /blog/feed/<pageNumber>/<pageLimit>`
 
 - mongodb에서 blog 피드 데이터를 읽어옵니다.
 
-`GET /youtube`
+`GET /youtube/<pageNumber>/<pageLimit>`
 
 - mongodb에서 youtube 목록 데이터를 읽어옵니다.
 
-`GET /youtube/feed`
+`GET /youtube/feed/<pageNumber>/<pageLimit>`
 
 - mongodb에서 youtube 피드 데이터를 읽어옵니다.
 
