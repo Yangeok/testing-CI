@@ -5,14 +5,14 @@ const YoutubeFeeds = require('../db/models/youtubeFeeds');
 
 exports.getBlogAuthors = async () => {
   const data = await Blog.find()
-    .select('-_id name url desc')
+    .select('name url desc')
     .sort({ name: 'asc' });
   return data;
 };
 
 exports.getYoutubeAuthors = async () => {
   const data = await Youtube.find()
-    .select('-_id name url desc')
+    .select('name url desc')
     .sort({ name: 'asc' });
   return data;
 };
