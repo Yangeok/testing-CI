@@ -3,6 +3,6 @@ const youtube = new Router();
 const youtubeCtrl = require('./youtube.controller');
 
 youtube.get('/:page/:limit', youtubeCtrl.list);
-youtube.get('/feed/:page/:limit', youtubeCtrl.feeds);
+youtube.get('/post/:page/:limit', youtubeCtrl.feeds);
 
 module.exports = youtube;
