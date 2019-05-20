@@ -10,6 +10,7 @@
 - 리스트에 sns링크 추가하기
 - 피드 last updated 추가해서 보내기
 - opml 불러와서 보내기
+- 타입스크립트 리팩토링
 
 ## Endpoints
 
