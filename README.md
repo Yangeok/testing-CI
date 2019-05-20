@@ -1,9 +1,15 @@
-# Training Log API Server
+# Training Log Back-end API Server
 
 ## Todo
 
+- 해외, 국내로 리스트를 4개로 만들기
 - 포스트에서 작성자 페이지 링크도 만들기
 - 리스트 정렬쿼리를 작성하기
+- 유튜브는 영상 썸네일도 같이 보내기
+- 블로거 썸네일 이미지 같이 보내기
+- 리스트에 sns링크 추가하기
+- 피드 last updated 추가해서 보내기
+- opml 불러와서 보내기
 
 ## Endpoints
 
