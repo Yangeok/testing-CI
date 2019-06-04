@@ -14,13 +14,14 @@ module.exports = () => {
       err => {
         if (err) {
           console.error(`connection error:`, err);
+        } else {
+          console.log(
+            `> Connected on
+   - URI: ${env.MONGO_URI}
+   - Database: ${env.MONGO_DATABASE.toUpperCase()} 
+   - Environment: ${env.NODE_ENV.toUpperCase()}`
+          );
         }
-        console.log(
-          `> Connected on
- - URI: ${env.MONGO_URI}
- - Database: ${env.MONGO_DATABASE.toUpperCase()} 
- - Environment: ${env.NODE_ENV.toUpperCase()}`
-        );
       }
     );
   }
