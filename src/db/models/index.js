@@ -1,30 +1,12 @@
-require('dotenv').config({ path: __dirname });
 const mongoose = require('mongoose');
-const env = process.env;
+const { uri, opts, msg } = require('../config');
 
 module.exports = () => {
-  function connect() {
-    mongoose.connect(
-      `${env.MONGO_URI}${env.MONGO_DATABASE}`,
-      {
-        useNewUrlParser: true,
-        useCreateIndex: true,
-        useFindAndModify: true
-      },
-      err => {
-        if (err) {
-          console.error(`connection error:`, err);
-        } else {
-          console.log(
-            `> Connected on
-   - URI: ${env.MONGO_URI}
-   - Database: ${env.MONGO_DATABASE.toUpperCase()} 
-   - Environment: ${env.NODE_ENV.toUpperCase()}`
-          );
-        }
-      }
-    );
-  }
+  connect = () => {
+    mongoose.connect(uri, opts, err => {
+      err ? console.error(`connection error:`, err) : console.log(msg);
+    });
+  };
   connect();
   mongoose.connection.on('disconnected', connect);
 };
