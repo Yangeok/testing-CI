@@ -6,7 +6,6 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "dotenv": "^7.0.0",
-    "js-yaml": "^3.12.1",
     "koa": "^2.7.0",
     "koa-body": "^4.1.0",
     "koa-json": "^2.0.2",
@@ -15,8 +14,6 @@
     "koa2-cors": "^2.0.6",
     "mongoose": "^5.4.22",
     "mongoose-aggregate-paginate-v2": "^1.0.2",
-    "mongoose-paginate": "^5.0.3",
-    "mongoose-paginate-v2": "^1.0.24",
     "mongoose-unique-validator": "^2.0.2",
     "nodemon": "^1.18.10"
   },
