@@ -18,7 +18,7 @@
 
 - mongodb에서 blog 목록 데이터를 읽어옵니다.
 
-`GET /blog/feed/<pageNumber>/<pageLimit>`
+`GET /blog/post/<pageNumber>/<pageLimit>`
 
 - mongodb에서 blog 피드 데이터를 읽어옵니다.
 
@@ -26,7 +26,7 @@
 
 - mongodb에서 youtube 목록 데이터를 읽어옵니다.
 
-`GET /youtube/feed/<pageNumber>/<pageLimit>`
+`GET /youtube/post/<pageNumber>/<pageLimit>`
 
 - mongodb에서 youtube 피드 데이터를 읽어옵니다.
 
